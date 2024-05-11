@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Setono\SyliusTermsPlugin\TermLinkGenerator;
 
 use RuntimeException;
-use function Safe\sprintf;
 use Setono\SyliusTermsPlugin\ClickStrategyApplicator\ClickStrategyApplicatorInterface;
 use Setono\SyliusTermsPlugin\Model\TermsInterface;
 

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Setono\SyliusTermsPlugin\Form\Type;
 
-use function Safe\sprintf;
 use Setono\SyliusTermsPlugin\Model\TermsInterface;
 use Setono\SyliusTermsPlugin\TermLinkGenerator\TermLinkGeneratorInterface;
 use Symfony\Component\Form\AbstractType;

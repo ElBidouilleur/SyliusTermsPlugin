@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Setono\SyliusTermsPlugin\Fixture\Factory;
 
 use DateTimeInterface;
-use Safe\DateTime;
 use Setono\SyliusTermsPlugin\Doctrine\ORM\TermsRepositoryInterface;
 use Setono\SyliusTermsPlugin\Generator\TermSlugGeneratorInterface;
 use Setono\SyliusTermsPlugin\Model\TermsInterface;
@@ -111,7 +110,10 @@ class TermsExampleFactory extends AbstractExampleFactory
     {
         $resolver
             ->setDefault('name', function (Options $options): string {
-                return implode(' ', (array) $this->faker->words(3));
+                /** @var string[] $words */
+                $words = (array) $this->faker->words(3);
+
+                return implode(' ', $words);
             })
 
             ->setDefault('code', function (Options $options): string {

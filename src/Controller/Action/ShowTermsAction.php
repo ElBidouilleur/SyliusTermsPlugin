@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Setono\SyliusTermsPlugin\Controller\Action;
 
-use function Safe\sprintf;
 use Setono\SyliusTermsPlugin\Doctrine\ORM\TermsRepositoryInterface;
 use Sylius\Component\Channel\Context\ChannelContextInterface;
 use Symfony\Component\HttpFoundation\Response;
