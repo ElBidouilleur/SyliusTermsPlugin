@@ -1,5 +1,5 @@
 {
-    "name": "setono/sylius-terms-plugin",
+    "name": "elbidouiller/sylius-terms-plugin",
     "description": "Sylius terms and conditions plugin",
     "license": "MIT",
     "type": "sylius-plugin",
