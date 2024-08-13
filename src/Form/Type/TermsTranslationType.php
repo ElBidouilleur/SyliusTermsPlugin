@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Setono\SyliusTermsPlugin\Form\Type;
 
+use MonsieurBiz\SyliusRichEditorPlugin\Form\Type\RichEditorType;
 use Sylius\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -26,7 +27,7 @@ final class TermsTranslationType extends AbstractResourceType
                     'placeholder' => 'setono_sylius_terms.form.terms.explanation_placeholder',
                 ],
             ])
-            ->add('content', TextareaType::class, [
+            ->add('content', RichEditorType::class, [
                 'required' => false,
                 'label' => 'setono_sylius_terms.form.terms.content',
             ])

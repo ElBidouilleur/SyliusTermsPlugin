@@ -13,3 +13,7 @@ setono_sylius_terms_admin_terms:
             index:
                 icon: 'check circle outline'
     type: sylius.resource
+    
+monsieurbiz_richeditor_admin:
+    resource: "@MonsieurBizSyliusRichEditorPlugin/Resources/config/routing/admin.yaml"
+    prefix: /%sylius_admin.path_name%
