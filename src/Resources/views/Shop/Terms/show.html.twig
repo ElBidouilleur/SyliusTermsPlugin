@@ -4,7 +4,7 @@
     {{ terms.name }}
 {%- endblock -%}
 
-{% set elements = monsieurbiz_richeditor_get_elements(termsgit a.content) %}
+{% set elements = monsieurbiz_richeditor_get_elements(terms.content) %}
 
 {% block content %}
     {% include '@SetonoSyliusTermsPlugin/Shop/Terms/Show/_breadcrumb.html.twig' %}
