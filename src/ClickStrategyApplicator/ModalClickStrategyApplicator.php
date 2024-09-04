@@ -8,6 +8,6 @@ final class ModalClickStrategyApplicator implements ClickStrategyApplicatorInter
 {
     public function applyClickStrategy(string $termsLink): string
     {
-        return preg_replace('/<a/', '<a class="term-terms-modal-link"', $termsLink);
+        return preg_replace('/<a/', '<a target="_blank" class="term-terms-modal-link"', $termsLink);
     }
 }
